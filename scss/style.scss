@@ -49,7 +49,7 @@ main{
     header{
          
         .header-container{
-            max-width: 1000px;
+            max-width: 900px;
             display: flex;
             
             .header-container__logo{
@@ -82,7 +82,7 @@ main{
 
     main{
         .main-container{
-            max-width: 1000px;
+            max-width: 900px;
             
             .main-container__contacto{
                 .main-container__contacto__form{
@@ -129,8 +129,103 @@ main{
     }
     footer{
         .main-container__footer{
-            max-width: 1000px;
+            max-width: 900px;
         }
     }
    
+}
+
+.animacion{
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+
+
+.animacionArriba{
+    animation: mostrar-arriba 1.5s;
+}
+
+.animacionDerecha{
+    animation: mostrar-derecha 1s;
+}
+
+.animacionIzquierda{
+    animation: mostrar-izquierda 1s;
+}
+
+@keyframes mostrar-derecha {
+    0%{
+        transform: translateX(60px);
+        opacity: 0;
+    }
+
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes mostrar-izquierda {
+    0%{
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes mostrar-arriba {
+    0%{
+        transform: translateY(80px);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: .3;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/*********************************/
+@keyframes mostrar-derecha-mayor {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes mostrar-izquierda-mayor {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animacionDerechaMayor{
+    animation: mostrar-derecha-mayor 1.5s;
+}
+.animacionIzquierdaMayor{
+    animation: mostrar-izquierda-mayor 1.5s;
 }
