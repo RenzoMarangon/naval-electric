@@ -157,7 +157,6 @@ main{
 @keyframes mostrar-derecha {
     0%{
         transform: translateX(60px);
-        opacity: 0;
     }
 
 
@@ -170,7 +169,6 @@ main{
 @keyframes mostrar-izquierda {
     0%{
         transform: translateX(-30px);
-        opacity: 0;
     }
 
 
@@ -184,7 +182,6 @@ main{
 @keyframes mostrar-arriba {
     0%{
         transform: translateY(80px);
-        opacity: 0;
     }
 
     50%{
@@ -200,7 +197,6 @@ main{
 @keyframes mostrar-derecha-mayor {
     0%{
         transform: translateX(100px);
-        opacity: 0;
     }
 
 
@@ -213,7 +209,6 @@ main{
 @keyframes mostrar-izquierda-mayor {
     0%{
         transform: translateX(-100px);
-        opacity: 0;
     }
 
 

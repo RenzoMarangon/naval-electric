@@ -28,33 +28,43 @@ menuHamburguesa.addEventListener("click",()=>{
     
 // })
 
+
+
 const animados = document.querySelectorAll(".animacion");
 
 
 animados[0].classList.add("animacionIzquierda");
-animados[0].style.opacity="1";
 animados[1].classList.add("animacionDerecha");
-animados[1].style.opacity="1";
 animados[2].classList.add("animacionArriba");
-animados[2].style.opacity="1";
 
-const animarObjetos = ()=>{
-    let scrollTop = document.documentElement.scrollTop;
-    animados.forEach((e)=>{
 
-        
-        if(e.offsetTop - 500 < scrollTop && e.id=="sobre-nosotros"){
-            e.classList.add("animacionDerechaMayor")
-            e.style.opacity="1";
-        }else if(e.offsetTop - 500 < scrollTop && e.id=="contamos-con"){
-            e.classList.add("animacionIzquierdaMayor")
-            e.style.opacity="1";
-        }else if(e.offsetTop - 500 < scrollTop){
-            e.classList.add("animacionArriba")
-            e.style.opacity="1";
-        }
-
-    })
+if(window.innerWidth>1111){
+    const animarObjetos = ()=>{
+        let scrollTop = document.documentElement.scrollTop;
+        animados.forEach((e)=>{
+    
+            
+            if(e.offsetTop - 500 < scrollTop && e.id=="sobre-nosotros"){
+                e.classList.add("animacionDerechaMayor")
+                e.style.opacity="1";
+            }else if(e.offsetTop - 500 < scrollTop && e.id=="contamos-con"){
+                e.classList.add("animacionIzquierdaMayor")
+                e.style.opacity="1";
+            }else if(e.offsetTop - 500 < scrollTop){
+                e.classList.add("animacionArriba")
+                e.style.opacity="1";
+            }
+    
+        })
+    }
+    window.addEventListener("scroll",animarObjetos);
 }
 
-window.addEventListener("scroll",animarObjetos);
+
+
+animados.forEach((e)=>{
+    e.style.opacity="1";
+})
+
+
+console.log(window.innerWidth)
