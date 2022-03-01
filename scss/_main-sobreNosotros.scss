@@ -1,0 +1,29 @@
+.main-container__sobre-nosotros{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    margin-top: 1rem;
+    height: 33rem;
+    h2{
+        margin-bottom: 1rem;
+    }
+    p{
+         margin-bottom: 2rem;
+    }
+
+    .main-container__sobre-nosotros__img{
+        position: relative;
+        img{
+            width: 80%;
+            
+        }
+        .sobre-nosotros__img__last-child{
+            width: 60%;
+            position: absolute;
+            top: 6rem;
+            right: 0;
+            
+        }
+    }
+}

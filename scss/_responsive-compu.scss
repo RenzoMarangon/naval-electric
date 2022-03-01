@@ -1,0 +1,222 @@
+@media screen and (min-width:1101px) {
+
+    body{
+        
+        h1{
+            font-size: 45px;
+        }
+        p{
+            font-size: 18px;
+        }
+        li{
+            font-size: 18px;
+        }
+
+        h2{
+            font-size: 32px;
+        }
+    }
+    
+    header{
+        
+        .header-container{
+            
+            max-width: 1440px;
+            display: grid;
+            grid-template-areas: "logo link";
+            grid-template-columns: 1fr 2fr;
+            width: 70%;
+            height: 10vh;
+            padding: .5rem;
+            border-right: solid 1px #0000001e;
+            border-left: solid 1px #0000001e;
+            .header-container__logo{
+                
+                p{
+                    display: none;
+                }
+                img{
+                    width: 35%;
+                }
+            }
+
+            .header-container__link{
+                margin: auto;
+                height: auto;
+                ul{
+                    
+                    display: flex;
+                    li{
+                        margin: auto;
+                        border: none;
+                        transition: all ease-in-out .3s;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+
+            
+        }
+        
+    }
+
+    footer{
+        .main-container__footer{
+            margin: auto;
+            max-width: 1440px;
+            border-right: solid 1px #0000001e;
+            border-left: solid 1px #0000001e;
+            width: 70%;
+            text-align: center;
+            .main-container__footer__texto{
+                p{
+                    a{
+                        img{
+                            width: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        
+        .main-container{
+            max-width: 1440px;
+            width: 70%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border-right: solid 1px #0000001e;
+            border-left: solid 1px #0000001e;
+            .main-container__inicio{
+                height: 50vh;
+            }
+            .main-container__sobre-nosotros{
+                margin: auto;
+                display: grid;
+                grid-template-areas:"imagenes texto ";
+                width: 90%;
+                height: 40vh;
+                
+                .main-container__sobre-nosotros__texto{
+                     grid-area:texto;
+                     margin: auto auto 2rem auto;
+                     padding: 1rem;
+                     width: 80%;
+                     line-height: 2rem;
+                     
+                }
+                .main-container__sobre-nosotros__img{
+                    grid-area:imagenes;
+                    padding: 5rem 0;
+                    img{
+                        max-width: 50rem;
+                        
+                        border-radius: 1rem;
+                        top: 10rem;
+                    }
+                    
+
+                }
+            }
+
+            .main-container__contamos-con{
+                flex-direction: row;
+                height: 50vh;
+                margin: 0;
+                width: 90%;
+                justify-self: flex-end;
+                align-self: flex-end;
+                padding: 2rem 0;
+                .main-container__contamos-con__texto{
+                    width: 50%;
+                    padding: 2rem;
+                    align-self: center;
+                }
+
+                img{
+                    width: 40%;
+                    align-self: center;
+                    
+                }
+
+                ul{
+                    li{
+                        margin-top: 1rem;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .main-container__contacto{
+                display: grid;
+                grid-template-areas: "cont cont" "form datos";
+                h2{
+                  margin-bottom: 1rem;  
+                }
+
+                .main-container__contacto__form{
+                    grid-area: form;
+                    margin: auto;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 4fr 1fr;
+                    grid-template-areas: "nom app" "mail tel" "mjs mjs" "... enviar";
+                    grid-gap: 0 1rem;
+                    
+                   
+                    input{
+                        &:nth-child(1){grid-area:nom; }
+                        &:nth-child(2){grid-area:app;}
+                        &:nth-child(3){grid-area:mail;}
+                        &:nth-child(4){grid-area:tel;}
+                        &:nth-child(6){
+                            grid-area:enviar; 
+                            justify-self: end;
+                            cursor: pointer;
+                            transition: all .5s ease-in-out;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                    #text-area{
+                        grid-area: mjs; 
+                        
+                    }
+                }
+                .main-container__contacto__datos{
+                    grid-area: datos;
+                    margin: 0 auto;
+                    margin-left: 1rem;
+                    .main-container__contacto__datos__telefono{
+                        margin-bottom: 2rem;
+                        a{
+                            
+                            transition: all .5s ease-in-out;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+
+                    .main-container__contacto__datos__mail{
+                        a{
+                            
+                            transition: all .5s ease-in-out;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                   
+                }
+            }
+
+        }
+    }
+}
