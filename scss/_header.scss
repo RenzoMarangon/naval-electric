@@ -12,14 +12,13 @@ header{
             grid-template-areas: "logo menu";
            
             width: 95%;
-            height: 100%;
-            padding: .5rem 0;
+            height: 10vh;
+            padding: .5rem;
             
             img{
                 
                 width: 25%;
-                
-                padding: .5rem;
+                margin-top: 1rem;
             }
 
             .header-container__menu-responsive{
@@ -27,6 +26,7 @@ header{
                     font-size: 2rem;
                     transition: all ease-out .5s;
                     border-radius: .2rem;
+                    margin: auto;
             }
 
             

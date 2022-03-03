@@ -4,6 +4,7 @@
     padding: 5%;
     border-radius: 1rem;
     background-color: #fff;
+    
     .main-container__contacto__datos__telefono, .main-container__contacto__datos__mail{
         display: flex;
         margin-top: 1rem;
@@ -56,6 +57,10 @@
              width: 30%;
              align-self: flex-end;
              color: #fff;
+             cursor: pointer;
+             &:focus{
+                 transform: scale(1.1);
+             }
          }
         }
     }

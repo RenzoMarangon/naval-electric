@@ -1,0 +1,90 @@
+.animacion{
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+
+
+.animacionArriba{
+    animation: mostrar-arriba 1.5s;
+}
+
+.animacionDerecha{
+    animation: mostrar-derecha 1s;
+}
+
+.animacionIzquierda{
+    animation: mostrar-izquierda 1s;
+}
+
+@keyframes mostrar-derecha {
+    0%{
+        opacity: 0;
+        transform: translateX(60px);
+    }
+
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes mostrar-izquierda {
+    0%{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes mostrar-arriba {
+    0%{
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/*********************************/
+@keyframes mostrar-derecha-mayor {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes mostrar-izquierda-mayor {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animacionDerechaMayor{
+    animation: mostrar-derecha-mayor 1.5s;
+}
+.animacionIzquierdaMayor{
+    animation: mostrar-izquierda-mayor 1.5s;
+}
