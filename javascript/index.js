@@ -45,18 +45,21 @@ animados[2].style.opacity="1";
         let scrollTop = document.documentElement.scrollTop;
         animados.forEach((e)=>{
             if(e.offsetTop - 500 < scrollTop){
-                e.style.opacity="1";
-                e.classList.toggle("animacion")
-
-                if(e.id=="sobre-nosotros"){
-                    e.classList.add("animacionDerechaMayor")
-
-                }else if(e.id=="contamos-con"){
-                    e.classList.add("animacionIzquierdaMayor")
-                    
-                }else{
+                if(e.classList.contains("arriba")){
+                    e.style.opacity="1"
                     e.classList.add("animacionArriba")
-                
+                }else if(e.classList.contains("derecha")){
+                    e.style.opacity="1"
+                    e.classList.add("animacionDerecha")
+                }else if(e.classList.contains("izquierda")){
+                    e.style.opacity="1"
+                    e.classList.add("animacionIzquierda")
+                }else if(e.classList.contains("derechaMayor")){
+                    e.style.opacity="1"
+                    e.classList.add("animacionDerechaMayor")
+                }else if(e.classList.contains("izquierdaMayor")){
+                    e.style.opacity="1"
+                    e.classList.add("animacionIzquierdaMayor")
                 }
             }
         }
