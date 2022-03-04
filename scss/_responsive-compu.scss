@@ -33,12 +33,13 @@
             padding: 0;
             .header-container__logo{
                 margin: auto;
-                padding: 0;
+                
                 p{
                     display: none;
                 }
                 img{
                     width: 50%;
+                    margin: 0;
                 }
             }
 
@@ -103,6 +104,7 @@
             }
             .main-container__sobre-nosotros{
                 margin: auto;
+                margin-top: 4rem;
                 display: grid;
                 grid-template-areas:"imagenes texto ";
                 width: 90%;
@@ -133,7 +135,7 @@
             .main-container__contamos-con{
                 flex-direction: row;
                 height: 50vh;
-                margin: 0;
+                margin: 4rem 0 0 0;
                 width: 90%;
                 justify-self: flex-end;
                 align-self: flex-end;

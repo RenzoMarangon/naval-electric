@@ -3,8 +3,6 @@
     opacity: 0;
 }
 
-
-
 .animacionArriba{
     animation: mostrar-arriba 1.5s;
 }
@@ -15,6 +13,13 @@
 
 .animacionIzquierda{
     animation: mostrar-izquierda 1s;
+}
+
+.animacionDerechaMayor{
+    animation: mostrar-derecha-mayor 1.5s;
+}
+.animacionIzquierdaMayor{
+    animation: mostrar-izquierda-mayor 1.5s;
 }
 
 @keyframes mostrar-derecha {
@@ -82,9 +87,3 @@
     }
 }
 
-.animacionDerechaMayor{
-    animation: mostrar-derecha-mayor 1.5s;
-}
-.animacionIzquierdaMayor{
-    animation: mostrar-izquierda-mayor 1.5s;
-}
