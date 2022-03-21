@@ -26,7 +26,7 @@
             grid-template-areas: "logo link";
             grid-template-columns: 1fr 2fr;
             width: 70%;
-            height: 10vh;
+            height: 13vh;
             border-right: solid 1px #0000001e;
             border-left: solid 1px #0000001e;
             
@@ -37,7 +37,7 @@
                     display: none;
                 }
                 img{
-                    width: 40%;
+                    width: 50%;
                     margin: auto 0;
                     
                 }
@@ -100,7 +100,7 @@
             border-right: solid 1px #0000001e;
             border-left: solid 1px #0000001e;
             .main-container__inicio{
-                height: 90vh;
+                height: 87vh;
             }
             .main-container__sobre-nosotros{
                 margin: auto;
