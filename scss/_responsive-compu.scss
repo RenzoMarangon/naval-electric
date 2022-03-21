@@ -27,20 +27,19 @@
             grid-template-columns: 1fr 2fr;
             width: 70%;
             height: 10vh;
-            padding: .5rem;
             border-right: solid 1px #0000001e;
             border-left: solid 1px #0000001e;
-            padding: 0;
+            
+            
             .header-container__logo{
                 margin: auto;
-                
                 p{
                     display: none;
                 }
                 img{
-                    width: 50%;
-                    margin: 0;
+                    width: 40%;
                     margin: auto 0;
+                    
                 }
             }
 
